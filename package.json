@@ -1,0 +1,19 @@
+{
+  "name": "tvmaze-react",
+  "version": "1.0.0",
+  "description": "## Deployed App https://git.generalassemb.ly/pages/ga-wdi-exercises/react-tvmaze/",
+  "main": "results.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WenYaoPeter/tvmaze-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WenYaoPeter/tvmaze-react/issues"
+  },
+  "homepage": "https://github.com/WenYaoPeter/tvmaze-react#readme"
+}
