@@ -2,20 +2,24 @@ class Search extends React.Component {
    constructor(props){
       super(props);
       this.changeHandler = this.changeHandler.bind(this);
+      this.clickHandler = this.clickHandler.bind(this);
       
    }
 
    state ={
       input: "",
-      results: false
+      results: false,
+      query: ""
    }
 
    changeHandler(event){
       this.setState (
          {
-            input: event.target.value
+            input: event.target.value,
+            query: this.state.input
          }
       )
+      console.log("query", this.state.query)
    }
 
    clickHandler(){
@@ -25,12 +29,13 @@ class Search extends React.Component {
             results: true
          }
       )
+      
    }
 
    render(){
 
       let results;
-
+      
       if (this.state.results) {
          results = <Results />
       } else {
@@ -42,6 +47,19 @@ class Search extends React.Component {
             <input onChange={this.changeHandler} value={this.state.input}/>
             <button type="button" onClick={this.clickHandler}>Search</button>
             {results}
+         </div>
+      )
+   }
+}
+
+class Results extends React.Component {
+   render(){
+      // console.log("this is results", results[0].score)
+      // let testing = results[0];
+     // console.log(this.state.results);
+      return(
+         <div>
+           searched
          </div>
       )
    }
